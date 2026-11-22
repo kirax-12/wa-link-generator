@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pembuat Link WhatsApp — Bikin Link wa.me Sekali Klik</title>
+<meta name="description" content="Bikin link WhatsApp wa.me lengkap dengan pesan otomatis buat toko online kamu. Pembeli tinggal klik, chat langsung kebuka dan terisi. Gratis, tanpa daftar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top">Link<span>WA</span></a>
+  <nav class="site-nav" aria-label="Navigasi utama">
+    <a href="#bikin">Bikin Link</a>
+    <a href="#cara">Cara Pakai</a>
+  </nav>
+</header>
+<div class="tape" aria-hidden="true"><span>Bikin Link WA * Sekali Klik * Chat Langsung Kebuka * Buat Jualan Online * Bikin Link WA * Sekali Klik * Chat Langsung Kebuka * Buat Jualan Online *&nbsp;</span></div>
+
+<main id="top">
+  <section class="hero">
+    <p class="hero-kicker">Tools kecil · langganan toko online</p>
+    <h1>Pembeli klik, chat kamu langsung <span class="hl">terisi.</span></h1>
+    <p class="hero-sub">Tempel link ini di bio Instagram, katalog, atau kartu nama digital. Pembeli nggak perlu simpan nomor dulu — klik link, WhatsApp kebuka, pesan pembuka <strong>udah tertulis otomatis</strong>. Kamu tinggal balas.</p>
+  </section>
+
+  <section id="bikin" class="app" aria-label="Pembuat link WhatsApp">
+    <div class="panel panel-form">
+      <div class="field">
+        <label for="input-phone">Nomor WhatsApp tujuan</label>
+        <input id="input-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="cth. 0812-3456-7890" maxlength="25">
+        <p class="field-hint">Tulis bebas — 08…, +62…, pakai spasi atau strip juga boleh. Nanti dirapikan otomatis.</p>
+        <p class="normalized mono" id="normalized-line" aria-live="polite" hidden></p>
+        <p class="error" id="phone-error" role="alert" hidden></p>
+      </div>
+
+      <div class="field">
+        <span class="field-label" id="template-label">Template pesan — klik buat pakai</span>
+        <div class="chips" role="group" aria-labelledby="template-label">
+          <button class="chip" type="button" data-template="tanya">Tanya Produk</button>
+          <button class="chip" type="button" data-template="order">Order</button>
+          <button class="chip" type="button" data-template="booking">Booking</button>
+        </div>
+        <label for="input-message">Pesan pembuka</label>
+        <textarea id="input-message" rows="5" maxlength="1000" placeholder="cth. Halo Kak, saya mau tanya stoknya masih ada?">Halo Kak, saya mau tanya, produknya masih ready? Makasih.</textarea>
+        <p class="field-hint"><span id="char-count">0</span>/1000 karakter · Bagian [Nama] dan [Produk] di template bisa kamu edit langsung.</p>
+      </div>
+
+      <div class="field">
+        <label for="output-link">Link kamu</label>
+        <div class="link-row">
+          <input id="output-link" class="mono" type="text" readonly value="" aria-describedby="copy-status">
+          <button class="btn btn-copy" id="copy-button" type="button">Salin Link</button>
+        </div>
+        <p class="copy-status mono" id="copy-status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="panel panel-preview">
+      <p class="preview-kicker">Pratinjau di HP pembeli</p>
+      <div class="phone" aria-hidden="true">
+        <div class="phone-bar">
+          <span class="phone-avatar">T</span>
+          <span class="phone-name" id="preview-name">Toko Kamu</span>
+        </div>
+        <div class="phone-body">
+          <div class="bubble">
+            <p id="preview-text"></p>
+            <span class="bubble-meta"><span id="preview-time">09.00</span> <span class="ticks">✓✓</span></span>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-open" id="open-button" href="#" target="_blank" rel="noopener">Buka WhatsApp →</a>
+      <p class="preview-note">Coba klik tombolnya — harusnya WhatsApp langsung kebuka ke nomor tujuan.</p>
+    </div>
+  </section>
+
+  <section id="cara" class="section">
+    <h2>Cara pakainya</h2>
+    <span class="section-sub">dari nomor acak jadi link rapi ↓</span>
+    <ol class="steps">
+      <li><strong>Isi nomor tokomu.</strong> Format apa pun diterima — 08, 628, +62 — semua dirapikan jadi format internasional.</li>
+      <li><strong>Tulis pesan pembuka.</strong> Pakai template biar cepat, atau tulis sendiri. Pesan ini yang muncul otomatis di kolom chat pembeli.</li>
+      <li><strong>Salin dan sebar.</strong> Tempel linknya di bio sosmed, status WA, atau deskripsi produk. Tinggal tunggu chat masuk.</li>
+    </ol>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>Dibuat oleh Remike Dev</p>
+    <p><a href="https://github.com/kirax-12" target="_blank" rel="noopener">github.com/kirax-12</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
