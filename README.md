@@ -1,5 +1,7 @@
 # Pembuat Link WhatsApp
 
+**Demo live:** [wa-link-generator di GitHub Pages](https://kirax-12.github.io/wa-link-generator/)
+
 Web app statis buat bikin link `wa.me` lengkap dengan pesan pembuka otomatis — cocok buat penjual online yang mau pasang link chat di bio Instagram, katalog, status WA, atau kartu nama digital. Pembeli tinggal klik, WhatsApp langsung kebuka ke nomor tujuan dan kolom chatnya sudah terisi.
 
 ## Fitur
